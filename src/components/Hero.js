@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="full-screen hero">
             <div className="left-hero">
                 <span>I'm</span>
-                <h1 className="glitch">
+                <h1 className="">
                     <span>julio </span> <span> mariscal</span>
                 </h1>
                 <button className="btn">
