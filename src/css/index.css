@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Agency";
+    src: url("./../fonts/Agency.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* 
+*   Color Main
+*       #FE327E
+*   Sub colors
+*       #29E7D7
+*       #F0D91B
+*       #BAAEF
+*       1E1D4A
+*/
+
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+#root {
+    width: 100%;
+    overflow: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% = 10px de 16px*/
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: "Agency";
+}
+body * {
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.full-screen {
+    height: 100vh;
+    width: 100%;
+}
+
+/* 
+    NavBar
+*/
+.fixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 60%);
+    z-index: 1200;
+}
+.navbar {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f0d91b;
+    background: transparent;
+}
+/* 
+    toggle menu button CSS
+*/
+.toggle-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: inline-block;
+    padding: 0;
+}
+.toggle-button span {
+    height: 0.5rem;
+    background-color: white;
+    display: block;
+    border-radius: 20rem 30rem 30rem 20rem;
+}
+.toggle-button:hover span,
+.toggle-button:focus span {
+    background-color: #fe327e;
+}
+.toggle-button span:first-child {
+    margin-bottom: 1rem;
+    width: 5rem;
+}
+.toggle-button span:last-child {
+    width: 2.5rem;
+}
+
+/* 
+    navbar titles
+*/
+.navbar-elemets {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-item {
+    display: none;
+    margin: 0 3rem;
+}
+.navbar-item.navbar-item-main {
+    display: block;
+}
+.navbar-item:first-child {
+    margin-left: 0rem;
+}
+.navbar-item:last-child {
+    margin-right: 0rem;
+}
+.navbar-item-main h2 {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.8rem;
+    color: white;
+}
+.navbar-item a {
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.2rem;
+}
+.navbar-item a:after {
+    content: "";
+    margin-top: 0.5rem;
+    background: #fe327e;
+    width: 3rem;
+    padding: 0.2rem;
+    opacity: 0;
+}
+.navbar-item.navbar-item-main a::after {
+    width: 100%;
+}
+
+.navbar-item a:hover::after,
+.navbar-item a:hover:focus {
+    opacity: 1;
+}
+@media only screen and (min-width: 900px) {
+    .navbar-item {
+        display: block;
+    }
+}
+/* 
+    NavIcons
+*/
+.nav-icons svg {
+    font-size: 2.5rem !important;
+}
+.nav-icons svg:hover,
+.nav-icons svg:focus {
+    fill: #fe327e !important;
+}
+
+.nav-icons li {
+    margin: 0 0.1rem;
+}
+.nav-icons li:first-child {
+    margin-left: 0;
+}
+.nav-icons li:last-child {
+    margin-right: 0;
+}
+.MuiButton-text {
+    padding: 0 !important;
+}
+.MuiMenuItem-root {
+    color: black !important;
+    font-size: 2rem !important;
+}
+/* 
+    Hero
+*/
+.hero {
+    display: flex;
+    position: relative;
+}
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-hero {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.right-hero img {
+    width: calc(53.2rem * 1.1);
+    height: calc(48rem * 1.1);
+}
+.hero h1 {
+    text-transform: uppercase;
+    font-size: 10rem;
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width: 600px) {
+    .right-hero {
+        right: 0;
+    }
+    .right-hero img {
+        width: calc(53.2rem * 1.2);
+        height: calc(48rem * 1.2);
+    }
+}
+@media only screen and (min-width: 900px) {
+    .hero {
+        position: inherit;
+        justify-content: space-around;
+    }
+    .right-hero {
+        position: inherit;
+        display: flex;
+        align-items: flex-end;
+    }
+    .right-hero img {
+        width: calc(53.2rem * 1.5);
+        height: calc(48rem * 1.5);
+    }
+}
