@@ -12,7 +12,7 @@ const NavBarElements = () => {
                 </li>
                 <li className="navbar-item navbar-item-main ">
                     <a href="up">
-                        <h2 className="glitch">
+                        <h2 className="">
                             <span>web</span>
                             <span>developer</span>
                         </h2>
