@@ -5,8 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 // CSS Imports
-import "./css/index.css";
+import "./css/base.css";
 import "./css/mybs.css";
+import "./css/tags.css";
+import "./css/media.css";
+import "./css/library.css";
 import "./css/glitch.css";
 
 ReactDOM.render(

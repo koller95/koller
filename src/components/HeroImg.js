@@ -3,7 +3,7 @@ import koller from "./../img/koller.png";
 
 const HeroImg = () => {
     return (
-        <div className="right-hero">
+        <div className="hero-image">
             <img src={koller} alt="" />
         </div>
     );

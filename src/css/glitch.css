@@ -202,15 +202,6 @@
     }
 }
 
-.glitch {
-}
-.glitch:hover {
-    animation: glitch-animation 2s linear 0s infinite;
-}
-body {
-    background: #222 !important;
-}
-
 @keyframes glitch {
     0% {
         text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),

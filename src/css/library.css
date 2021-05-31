@@ -1,0 +1,64 @@
+#root {
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+}
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-pink: #fe327e;
+    --clr-blue: #29e7d7;
+    --clr-yellow: #f0d91b;
+    --clr-purple: #baaeff;
+    --clr-dark-blue: #1e1d4a;
+}
+.bg-pink {
+    background: var(--clr-pink);
+}
+.bg-blue {
+    background: var(--clr-blue);
+}
+.bg-yellow {
+    background: var(--clr-yellow);
+}
+.bg-purple {
+    background: var(--clr-purple);
+}
+.bg-dark-blue {
+    background: var(--clr-dark-blue);
+}
+.hidden {
+    display: none;
+}
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titles {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titles::after {
+    content: "";
+    width: 40%;
+    height: 0.3rem;
+    background: var(--clr-pink);
+}
+.title-num {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--clr-pink);
+    color: transparent;
+    font-weight: 300;
+    font-size: 10rem;
+    opacity: 15%;
+    font-family: "Agency";
+}

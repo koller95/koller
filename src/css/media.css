@@ -1,0 +1,21 @@
+@media only screen and (min-width: 600px) {
+    .hero-image {
+        right: 0;
+    }
+    .hero-image img {
+        width: calc(44.9rem * 1.2);
+        height: calc(46.4rem * 1.2);
+    }
+}
+@media only screen and (min-width: 900px) {
+    .hero-image img {
+        width: calc(44.9rem * 1.5);
+        height: calc(46.4rem * 1.5);
+    }
+    .hidden {
+        display: block !important;
+    }
+    .navbar-item {
+        display: block;
+    }
+}

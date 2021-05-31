@@ -1,12 +1,12 @@
 import { Container } from "@material-ui/core";
 import React from "react";
 
-const AboutMe = () => {
+const Proyects = () => {
     return (
         <section className="full-screen section-content">
             <div className="d-flex">
-                <span className="title-num">01</span>
-                <h2 className="titles">about me</h2>
+                <span className="title-num">02</span>
+                <h2 className="titles">proyects</h2>
             </div>
             <Container maxWidth="md">
                 <p>
@@ -25,4 +25,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default Proyects;

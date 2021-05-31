@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Agency";
+    src: url("./../fonts/Agency.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Eurostile";
+    src: url("./../fonts/EuroStyleNormal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-pink: #fe327e;
+    --clr-blue: #29e7d7;
+    --clr-yellow: #f0d91b;
+    --clr-purple: #baaeff;
+    --clr-dark-blue: #1e1d4a;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% = 10px de 16px*/
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+    font-family: "Agency";
+    color: white;
+}
+p {
+    font-family: "Eurostile";
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgb(158, 158, 158);
+    letter-spacing: 0.2rem;
+}
+
+ul {
+    list-style: none;
+}
+ol,
+ul {
+    padding: 0;
+}
